@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de aprendizagem do Ensino Médio Técnico.">
+  <title>Página Inicial | Minha Trajetória</title>
+  <!-- Folha de estilos compartilhada. O caminho muda nas páginas dentro de /paginas. -->
+  <link rel="stylesheet" href="css/estilo.css">  <link rel="stylesheet" href="css/modelos-cv-index.css">
+</head>
+<body>
+
+<!-- CABEÇALHO E MENU PRINCIPAL: o menu horizontal usa display:flex no CSS. -->
+<header class="site-header">
+  <a class="marca" href="index.html">Minha Trajetória<small>Portfólio de Aprendizagem • Ensino Médio Técnico</small></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+  <nav aria-label="Navegação principal">
+    <ul class="menu-horizontal" id="menu-principal">
+      <li><a href="index.html" aria-current="page">Início</a></li><li><a href="paginas/areas-do-saber.html">Áreas do Saber</a></li><li><a href="paginas/formacao-tecnica.html">Formação Técnica</a></li><li><a href="paginas/curriculo.html">Currículo</a></li><li><a href="paginas/memorias.html">Memórias</a></li><li><a href="paginas/jornada.html">Jornada</a></li><li><a href="paginas/contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+
+  <!-- DESTAQUE PRINCIPAL: personalize nome, curso, turma e texto. -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Meu portfólio pessoal</p>
+      <h1>Olá! Eu sou Nathalia Ramalho Ramos </h1>
+      <h2>Estudante do Ensino Médio Técnico de IOT </h2>
+      <p>Este espaço é meu portfólio de aprendizagem. Aqui registro minha trajetória, os conhecimentos que desenvolvo, meus projetos e os momentos importantes da vida escolar.</p>
+      <p><strong>Curso:</strong> Técnico em Informática<br><strong>Turma:</strong> 3º ano • <strong>Instituição:</strong>Senac Nações Unidas </p>
+      <a class="botao" href="paginas/areas-do-saber.html">Conheça minhas áreas de estudo →</a>
+      <a class="botao secundario" href="paginas/curriculo.html">Ver currículo</a>
+    </div>
+    <img class="hero-foto" src="imagens/nathaliafoto.jpg " border: 10px solid rgb(0, 0, 0); alt="Foto ilustrativa de um estudante fictício">
+  </section>
+
+<button id="btnMudarCor">Mudar cor</button>
+    <button id="btnCorOriginal">Voltar à cor original</button>
+    <p id="textoCor" class="resultado">Cor original da página.</p>
+
+  <!-- CARROSSEL HORIZONTAL: cartões lado a lado; use as setas para rolar. -->
+  <section>
+    <h2>Explore meu portfólio</h2>
+    <p class="subtitulo">Carrossel horizontal: deslize para os lados ou use os botões de navegação.</p>
+    <div class="carrossel" data-carrossel>
+      <div class="controles-carrossel">
+        <button type="button" data-anterior aria-label="Cartão anterior">‹</button>
+        <button type="button" data-proximo aria-label="Próximo cartão">›</button>
+      </div>
+      <div class="carrossel-faixa">
+        <article class="card slide">
+
+          <img src="../modelos_portfolio_estudante/imagens/areas-do-conhecimento.webp" alt="Livros e material de estudo">
+          <h3>Áreas do Saber</h3><p>Registros das disciplinas e dos aprendizados da formação geral.</p>
+          <a class="botao" href="paginas/areas-do-saber.html">Ver áreas</a>
+        </article>
+
+        <article class="card slide">
+          <img src="../modelos_portfolio_estudante/imagens/What_is_IoT.jpg" alt="Exemplo ilustrativo de programação">
+          <h3>Formação Técnica</h3><p>Projetos de programação, banco de dados, automação e tecnologia.</p>
+          <a class="botao" href="paginas/formacao-tecnica.html">Ver projetos</a>
+        </article>
+
+        <article class="card slide">
+          <img src="imagens/nathaliafoto.jpg" alt="Retrato ilustrativo do estudante">
+          <h3>Meu Currículo</h3><p>Formação, habilidades, experiências e certificados.</p>
+          <a class="botao" href="paginas/curriculo.html">Abrir currículo</a>
+        </article>
+
+        <article class="card slide">
+          <img src="../modelos_portfolio_estudante/imagens/memórias.jpeg" alt="Grupo fictício de estudantes">
+          <h3>Memórias</h3><p>Momentos especiais, atividades, eventos e trabalhos em equipe.</p>
+          <a class="botao" href="paginas/memorias.html">Ver memórias</a>
+        </article>
+
+        <article class="card slide">
+          <img src="../modelos_portfolio_estudante/imagens/casainteligente2.jpeg" alt="Projeto ilustrativo de robótica">
+          <h3>Projeto em destaque</h3><p>Um projeto marcante explicado passo a passo.</p>
+          <a class="botao" href="paginas/projeto-destaque.html">Conhecer projeto</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- CARROSSEL VERTICAL: cartões empilhados e roláveis de cima para baixo. -->
+  <section class="grade-cards">
+    <div>
+      <h2>Minha jornada em etapas</h2>
+      <p class="subtitulo">Carrossel vertical: use as setas para percorrer as etapas.</p>
+
+      <div data-carrossel-vertical>
+        <div class="controles-vertical">
+          <button type="button" data-subir aria-label="Etapa anterior">↑</button>
+          <button type="button" data-descer aria-label="Próxima etapa">↓</button>
+        </div>
+
+        <div class="carrossel-vertical">
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 1</p><h3>Descobrir</h3>
+            <p>Conhecer novas disciplinas, ferramentas e formas de aprender.</p>
+          </article>
+
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 2</p><h3>Experimentar</h3>
+            <p>Praticar, fazer perguntas, testar ideias e aprender com os erros.</p>
+          </article>
+
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 3</p><h3>Criar</h3>
+            <p>Desenvolver projetos e transformar conhecimentos em soluções.</p>
+          </article>
+
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 4</p><h3>Compartilhar</h3>
+            <p>Apresentar resultados, colaborar com colegas e refletir sobre a evolução.</p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+    <article class="card">
+      <h2>Meu objetivo</h2>
+      <p> O meu objetivo para os anos seguntes é poder aprofundar  mais meus conhecimentos em areas de IOT, como a esp, tambem quero aprender mais sobre banco de dados e backend  </p>
+      <h3>Competências em desenvolvimento</h3>
+      <div class="etiquetas">
+        <span class="etiqueta">HTML</span><span class="etiqueta">CSS</span>
+        <span class="etiqueta">Programação</span><span class="etiqueta">Trabalho em equipe</span>
+        <span class="etiqueta">Resolução de problemas</span>
+        <span class="etiqueta">banco de dados </span>
+        <span class="etiqueta">esp32</span>
+       <span class="etiqueta">arduino</span>
+       <span class="etiqueta">codagem</span>
+      </div>
+    </article>
+  </section>
+
+
+
+
+  <!-- GALERIA DE MODELOS DE CURRÍCULO: cinco modelos A4 retrato e dois A4 paisagem. -->
+  <section class="secao-modelos-cv" aria-labelledby="titulo-modelos-cv">
+    <h2 id="titulo-modelos-cv">Modelo de currículo para imprimir ou baixar</h2>
+    <p>Veja o meu modelo de curriculo simples para baixar ou revisar.</p>
+    <div class="grade-modelos-cv">
+      <article class="card-modelo-cv">
+       
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Retrato</span>
+        <h3>CV 3 — Compacto escuro</h3>
+        <p>Jovem aprendiz | Tecnologia e suporte</p>
+        <a class="link-modelo-cv" href="../modelos_portfolio_estudante/paginas/curriculointegrada.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="../modelos_portfolio_estudante/pdfs/curriculointegrada.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- RODAPÉ compartilhado por todas as páginas. -->
+<footer class="site-footer">
+  <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+  <p>Projeto educativo para registrar conhecimentos, projetos e memórias.</p>
+  <p><a style="color:#fff" href="index.html">Voltar ao início</a></p>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
